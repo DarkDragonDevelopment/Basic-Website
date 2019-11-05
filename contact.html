@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Ken's Coding Page | Contact</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+  <body>
+    <p>Site Navigation - <a href="home.html">Home</a> - <a href="aboutus.html">About</a> - <a href="contact.html">Contact (here)</a> - <a href="index.html">Index</a></p>
+    
+    <hr/>
+
+    <a href="https://pcpartpicker.com/"><img src="gaming-pc-4.jpg" alt="Gaming Computer 4"></a>
+
+    <h1>Contact Me</h1>
+    <a href="mailto:TheCoderGuy@mail.com">My Email</a>
+    <br/><br/>
+
+    <form method="post" action="./action_page.php">
+      <h1 style="text-align:center;">Give Me Your Feedback!</h1>
+
+      Enter Your Name: <input type="text" name="Name"/>
+      <br/>
+      Enter Your Email: <input type="text" name="Email"/>
+      <br/><br/>
+
+      Which country do you live in?
+      <select name="country">
+        <option value="usa">United States</option>
+        <option value="other-country">Other Country</option>
+      </select>
+      <br/><br/>
+
+      Do You Like The Site? <br/>
+      <input type="radio" name="AddToList" value="yes"/> Yes
+      <input type="radio" name="AddToList" value="no"/> No
+      <br/><br/>
+
+      What improvements or additional content would you like to see?
+      <br/><br/>
+      <textarea name="Comments" rows="10" cols="40" wrap="hard">What's your thoughts?</textarea>
+      <br/><br/>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

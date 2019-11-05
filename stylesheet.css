@@ -1,0 +1,44 @@
+﻿body
+{
+font-family:"comic sans ms";
+color:black;
+font-size:14px;
+background-color:teal;
+}
+
+h1
+{
+font-family:"times new roman";
+color:black;
+font-size:40px;
+}
+
+table, td, th
+{
+border:2px solid black;
+}
+td, th
+{
+text-align:center;
+}
+
+select, form, input
+{
+border:2px solid black;
+}
+
+form
+{
+padding:20px;
+width: 500px;
+}
+
+input[type=text]
+{
+width:200px;
+}
+
+input[name=Email]
+{
+width:202px
+}

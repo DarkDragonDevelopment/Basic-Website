@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  
+  <title>Ken's Coding Page | Home</title>
+  
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <style>
+  #drop {width:300px;height:187px;padding:0px;border:1px solid #000000;}
+  </style>
+
+  <script>
+  function allowDrop(ev) {
+  ev.preventDefault();
+  }
+
+  function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+</head>
+  <body>
+    <p>Site Navigation - <a href="home.html">Home (here)</a> - <a href="aboutus.html">About</a> - <a href="contact.html">Contact</a> - <a href="index.html">Index</a></p>
+
+    <hr/>
+
+    <hgroup>  
+      <h1>My Newbie Website</h1>
+      <h2>The Journey Begins...</h2>
+    </hgroup>
+
+    <a href="https://pcpartpicker.com/"><img src="gaming-pc-1.jpg" alt="Gaming Computer 1"></a>
+
+    <div>
+    <p>This is my website in its most <strong>embryonic</strong> state. As such, I will attempt to demonstrate:</p>
+      <ul>
+        <li><a href="#HTML">Basic HTML structure</a></li>
+        <li><a href="#VARIETY">A variety of tags, attributes and elements</a></li>
+        <li><a href="#STUFF">Various cool stuff</a></li>
+        <li><a href="#CODING">How awesome coding is</a></li>
+      </ul>
+    </div>
+      
+    <video width="500" height="300" controls="controls" style="display:block; margin:0 auto;" autoplay="autoplay" loop="loop">
+    <source src="samplevideo.mp4" type="video/mp4" />
+    Your browser does not support the HTML5 video element.
+    </video>
+
+    <audio controls="controls" autoplay="autoplay" loop="loop" style="display:block; margin:0 auto;">
+    <source src="sampleaudio.mp3" type="audio/mpeg" />Your browser does not support the HTML5 audio element.</audio>
+
+    <hr/>
+
+    <div>
+    <h3 id="HTML">Basic HTML structure</h3>
+    <p>HTML is organized, kind of like a family tree or a smaller box within a larger box. When an element (i.e. smaller box) is inside another element (i.e. larger box) it's considered the <strong>child</strong> of that element. The child element (i.e. smaller box) is said to be <strong>nested</strong> inside of the <strong>parent</strong> element (i.e. bigger box). Attributes are what goes inside those individual elements; they allow stuff to happen or changes to be made. Values are what goes inside attributes to specify what happens or what changes are being made.</p>
+
+    <hr/>
+
+    <h3 id="VARIETY">A variety of tags, attributes and elements</h3>
+    <ul>
+      <li>The HTML Head element &lt;head&gt; contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</li>
+      <li>The HTML Title element &lt;title&gt; defines the document's title that is shown in a browser's title bar or a page's tab.</li>
+      <li>The HTML Body element &lt;body&gt; represents the content of an HTML document - basically the stuff that you see when you open a webpage.</li>
+      <li>href &lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt; - The URL of a linked resource.</li>
+      <li>&lt;img&gt; used with the attributes scr="" and alt="" can embed images.</li>
+      <li>id - Often used with CSS to style a specific element.</li>
+      <li>class - Often used with CSS to style elements with common properties.</li>
+      <li>Check out these links for a full list of HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">Attributes</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Elements</a>.</li>
+      <li>Check out this <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">site</a> to check if your website or HTML code is valid or if it needs work.</li>
+      <li>Check out this <a href="https://www.w3schools.com/html/default.asp">site</a> to learn more about HTML, CSS, Javascript, Python and much more.</li>
+    </ul>
+
+    <hr/>
+
+    <h3 id="STUFF">Cool coding stuff</h3>
+
+    <map name="samplemap">
+    <area shape="rect" coords="170,100,640,360" href="https://developer.mozilla.org/en-US/docs/Games" alt="gaming"/>
+    </map>
+    <img src="gaming-1.jpg" usemap="#samplemap" style="display:block; margin:0 auto;" alt="gaming"/>
+
+    <br/>
+    <br/>
+
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/EL_Le8B_iCo" style="display:block; margin:0 auto;" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+
+    <hr/>
+
+    <h3 id="CODING">How awesome coding/programming is</h3>
+    <p><a href="https://www.indeed.com/salaries/Programmer-Salaries">$$$</A></p>
+
+    <canvas id="samplecanvas" width="800" height="500" style="border:1px solid black; display:block; margin:0 auto;">
+    Your broswer does not support the canvas element.
+    </canvas>
+
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#000000"
+    ctx.fillRect(50,50,50,50);
+    </script>
+
+    <br/>
+    <br/>
+
+    <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" style="float:right"></div>
+    <br>
+    <img id="drag" src="pc-1.jpg" draggable="true" ondragstart="drag(event)" width="300" height="187" alt="three monitors">
+
+    </div>
+  </body>
+</html>
