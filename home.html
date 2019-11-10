@@ -10,7 +10,7 @@
   <style>
   #drop {width:300px;height:187px;padding:0px;border:1px solid #000000;}
   </style>
-
+  <!-- Script for drag and drop function at the bottom of the page -->
   <script>
   function allowDrop(ev) {
   ev.preventDefault();
@@ -27,19 +27,19 @@
   }
   </script>
 </head>
-  <body>
+  <body> <!-- Navigation links at the top of every page -->
     <p>Site Navigation - <a href="home.html">Home (here)</a> - <a href="aboutus.html">About</a> - <a href="contact.html">Contact</a> - <a href="index.html">Index</a></p>
 
     <hr/>
 
-    <hgroup>  
+    <hgroup> <!-- Simple grouping of 2 headings -->
       <h1>My Newbie Website</h1>
       <h2>The Journey Begins...</h2>
     </hgroup>
-
+    <!-- Simple image with clickable link property -->
     <a href="https://pcpartpicker.com/"><img src="gaming-pc-1.jpg" alt="Gaming Computer 1"></a>
 
-    <div>
+    <div> <!-- Group of in-page links to different sections of this page -->
     <p>This is my website in its most <strong>embryonic</strong> state. As such, I will attempt to demonstrate:</p>
       <ul>
         <li><a href="#HTML">Basic HTML structure</a></li>
@@ -48,23 +48,23 @@
         <li><a href="#CODING">How awesome coding is</a></li>
       </ul>
     </div>
-      
+    <!-- displays a saved video file -->  
     <video width="500" height="300" controls="controls" style="display:block; margin:0 auto;" autoplay="autoplay" loop="loop">
     <source src="samplevideo.mp4" type="video/mp4" />
     Your browser does not support the HTML5 video element.
     </video>
-
+    <!-- displays a saved audio file -->
     <audio controls="controls" autoplay="autoplay" loop="loop" style="display:block; margin:0 auto;">
     <source src="sampleaudio.mp3" type="audio/mpeg" />Your browser does not support the HTML5 audio element.</audio>
 
     <hr/>
 
-    <div>
+    <div> <!-- basic description of html information -->
     <h3 id="HTML">Basic HTML structure</h3>
     <p>HTML is organized, kind of like a family tree or a smaller box within a larger box. When an element (i.e. smaller box) is inside another element (i.e. larger box) it's considered the <strong>child</strong> of that element. The child element (i.e. smaller box) is said to be <strong>nested</strong> inside of the <strong>parent</strong> element (i.e. bigger box). Attributes are what goes inside those individual elements; they allow stuff to happen or changes to be made. Values are what goes inside attributes to specify what happens or what changes are being made.</p>
 
     <hr/>
-
+    <!-- list of varied coding and programming information -->
     <h3 id="VARIETY">A variety of tags, attributes and elements</h3>
     <ul>
       <li>The HTML Head element &lt;head&gt; contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</li>
@@ -80,28 +80,28 @@
     </ul>
 
     <hr/>
-
+    
     <h3 id="STUFF">Cool coding stuff</h3>
-
-    <map name="samplemap">
+    
+    <map name="samplemap"> <!-- displays an imagemap with the television screen in the image being a clickable link -->
     <area shape="rect" coords="170,100,640,360" href="https://developer.mozilla.org/en-US/docs/Games" alt="gaming"/>
     </map>
     <img src="gaming-1.jpg" usemap="#samplemap" style="display:block; margin:0 auto;" alt="gaming"/>
 
     <br/>
     <br/>
-
+    <!-- displays an embedded youtube video about game development -->
     <iframe width="500" height="300" src="https://www.youtube.com/embed/EL_Le8B_iCo" style="display:block; margin:0 auto;" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 
     <hr/>
-
+    <!-- link to official data on salaries for programmers -->
     <h3 id="CODING">How awesome coding/programming is</h3>
     <p><a href="https://www.indeed.com/salaries/Programmer-Salaries">$$$</A></p>
-
+    <!-- simple canvas for demonstration -->
     <canvas id="samplecanvas" width="800" height="500" style="border:1px solid black; display:block; margin:0 auto;">
     Your broswer does not support the canvas element.
     </canvas>
-
+    <!-- simple drag and drop function for demonstration -->
     <script>
     var c=document.getElementById("samplecanvas");
     var ctx=c.getContext("2d");
@@ -111,7 +111,7 @@
 
     <br/>
     <br/>
-
+    <!-- destination box for drag and drop function -->
     <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" style="float:right"></div>
     <br>
     <img id="drag" src="pc-1.jpg" draggable="true" ondragstart="drag(event)" width="300" height="187" alt="three monitors">
