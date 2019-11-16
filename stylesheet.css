@@ -1,21 +1,25 @@
 ﻿body
 {
 font-family:"comic sans ms";
-color:black;
+color:aqua;
 font-size:14px;
-background-color:teal;
+background-image:url("background.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-attachment:fixed;
+background-position:center;
 }
 
 h1
 {
 font-family:"times new roman";
-color:black;
+color:aqua;
 font-size:40px;
 }
 
 table, td, th
 {
-border:2px solid black;
+border:2px solid lime;
 }
 td, th
 {
@@ -24,7 +28,7 @@ text-align:center;
 
 select, form, input
 {
-border:2px solid black;
+border:2px solid lime;
 }
 
 form
@@ -40,5 +44,15 @@ width:200px;
 
 input[name=Email]
 {
-width:202px
+width:202px;
+}
+
+hr
+{
+  border-color:lime;
+}
+
+a
+{
+	color:#9933ff;
 }
