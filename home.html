@@ -8,22 +8,27 @@
   <link rel="stylesheet" href="stylesheet.css">
 
   <style>
-  #drop {width:300px;height:187px;padding:0px;border:1px solid #00ff00;}
+  #drop1, #drop2 {
+  	width:300px;
+  	height:187px;
+  	padding:0px;
+  	border:1px solid #00ff00;
+  }
   </style>
   <!-- Script for drag and drop function at the bottom of the page -->
   <script>
   function allowDrop(ev) {
-  ev.preventDefault();
+  	ev.preventDefault();
   }
 
   function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+  	ev.dataTransfer.setData("text", ev.target.id);
   }
 
   function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  	ev.preventDefault();
+  	var data = ev.dataTransfer.getData("text");
+  	ev.target.appendChild(document.getElementById(data));
   }
   </script>
 </head>
@@ -59,7 +64,7 @@
 
     <hr/>
 
-    <div> <!-- basic description of html information -->
+    <!-- basic description of html information -->
     <h3 id="HTML">Basic HTML structure</h3>
     <p>HTML is organized, kind of like a family tree or a smaller box within a larger box. When an element (i.e. smaller box) is inside another element (i.e. larger box) it's considered the <strong>child</strong> of that element. The child element (i.e. smaller box) is said to be <strong>nested</strong> inside of the <strong>parent</strong> element (i.e. bigger box). Attributes are what goes inside those individual elements; they allow stuff to happen or changes to be made. Values are what goes inside attributes to specify what happens or what changes are being made.</p>
 
@@ -101,21 +106,185 @@
     <canvas id="samplecanvas" width="800" height="500" style="border:1px solid lime; display:block; margin:0 auto;">
     Your broswer does not support the canvas element.
     </canvas>
-    <!-- simple drag and drop function for demonstration -->
+    <!-- The Letter "H" -->
     <script>
     var c=document.getElementById("samplecanvas");
     var ctx=c.getContext("2d");
     ctx.fillStyle="#00ff00"
     ctx.fillRect(50,50,50,50);
     </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(50,110,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(50,170,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(50,230,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(50,290,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(50,350,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(50,410,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(110,230,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(170,230,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(230,230,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,50,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,110,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,170,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,230,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,290,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,350,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(290,410,50,50);
+    </script>
+    <!-- The Letter "I" -->
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,50,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,110,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,170,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,230,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,290,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,350,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(630,410,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(690,50,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(690,410,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(570,50,50,50);
+    </script>
+    <script>
+    var c=document.getElementById("samplecanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#00ff00"
+    ctx.fillRect(570,410,50,50);
+    </script>
 
     <br/>
     <br/>
     <!-- destination box for drag and drop function -->
-    <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" style="float:right"></div>
+    <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)" style="float:left">
+    	<img id="drag" src="pc-1.jpg" draggable="true" ondragstart="drag(event)" width="300" height="187" alt="three monitors">
+    </div>
     <br>
-    <img id="drag" src="pc-1.jpg" draggable="true" ondragstart="drag(event)" width="300" height="187" alt="three monitors">
-
+    <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)" style="float:right">
     </div>
   </body>
 </html>
